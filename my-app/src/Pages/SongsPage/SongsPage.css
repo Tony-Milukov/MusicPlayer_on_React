@@ -1,0 +1,36 @@
+.SongsPage {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    overflow: auto;
+    position: absolute;
+    flex-direction: column;
+}
+.pageTitle {
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.main {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    background: #282828;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: black;
+    margin-bottom: 16px;
+    border-radius: 35px;
+}
+.allSongs {
+   max-width: 500px;
+   width: 100%;
+   margin: 0 auto;
+    background: #282828;
+    height: 90%;
+    border-radius: 35px;
+    margin-top: 25px;
+}
