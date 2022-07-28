@@ -13,7 +13,8 @@ main {
     line-height: 29px;
     color: #E5E5E5;
     margin: 0;
-    margin-bottom: 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 .cardAuthor {
     margin: 0;
@@ -22,19 +23,86 @@ main {
     color: #BCBCBC;
 }
 .songCard {
-    cursor: pointer;
     display: flex;
-    justify-content: center;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
 .info {
     margin-left: 30px;
 }
-.like {
+.likeSongCard {
     margin-left: 50px;
+    align-self: baseline;
+    margin-top: 25px;
     cursor: pointer;
-    margin-bottom: 6px;
 }
 .infoTop {
-    display: flex;
+display: flex;
+}
+@media (max-width: 550px) {
+    .cartTitle {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .songCard {
+        max-width: 410px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 440px) {
+    .cartTitle {
+        font-size: 18px;
+    }
+    .songCard {
+        max-width: 370px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .cartTitle {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .cardAuthor {
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+    .cardImage {
+        max-width: 75px;
+        min-width: 75px;
+    }
+    .cartTitle {
+        font-size: 18px;
+    }
+    .cardAuthor {
+        font-size: 15px;
+    }
+    .songCard {
+        margin-bottom: 30px;
+    }
+    .cartTitle {
+        margin-bottom: 0px;
+    }
+    .allSongs {
+        max-width: 318px;
+    }
+}
+@media (max-width: 330px) {
+    .songCard {
+        max-width: 285px;
+        margin-bottom: 30px
+    }
+    .cartTitle {
+        font-size: 15px;
+        margin-bottom: 5px;
+        line-height: 20px;
+
+
+    }
+    .cardAuthor {
+        font-size: 12px;
+    }
+
+    
 }

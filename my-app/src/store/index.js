@@ -2,7 +2,8 @@ import thunk from 'redux-thunk' ;
 import { createStore,compose,combineReducers,applyMiddleware } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import {musicReducer} from "./Songs/reducer"; // localStorage
+import {musicReducer} from "./Songs/reducer";
+import {userReducer} from "./user/reducer"; // localStorage
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -11,7 +12,8 @@ const persistConfig = {
     storage,
 }
 const rootReducer = combineReducers({
-    allMusic: musicReducer
+    allMusic: musicReducer,
+    user: userReducer
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

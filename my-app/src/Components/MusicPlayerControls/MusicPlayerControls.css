@@ -1,0 +1,36 @@
+.progressbarContainer {
+    display: flex;
+    margin-top: 25px;
+
+}
+body {
+    background: #121212;}
+.progressbar {
+    width: 100%;
+    margin-right: 15px;
+}
+.playBTN {
+    border-radius: 406px;
+    height: 51px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonsControls {
+    max-width: 355px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around
+}
+.skipBTN {
+    border-radius: 406px;
+    height: 51px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
