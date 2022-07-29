@@ -11,11 +11,11 @@ import MusicPlayer from "../../Components/MusicPlayer/MusicPlayer";
 const SongPage = () => {
 
     const dispatch = useDispatch()
-    const [isLiked,setLike] = useState(false)
     const user = useSelector((state) => state.user.likedMusic)
     const songID = useParams().songID
     const songs = useSelector((state) =>  state.allMusic.songs)
     const songItem = songs.filter(i => i.ID === parseInt(songID))[0]
+    const [isLiked,setLike] = useState(user.map(i => i.ID === songItem.ID)[0])
 
     const changeLike = () => {
         setLike(!isLiked)

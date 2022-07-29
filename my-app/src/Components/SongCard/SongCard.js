@@ -10,8 +10,10 @@ import {useDispatch} from "react-redux";
 
 const SongCard = ({item}) => {
     const dispatch = useDispatch()
-  const [isLiked,setLike] = useState(false)
   const user = useSelector((state) => state.user.likedMusic)
+    const [isLiked,setLike] = useState(user.map(i => i.ID === item.ID)[0])
+    console.log(user.map(i => i.ID === item.ID)[0])
+    console.log(user)
 
   const changeLike = () => {
       setLike(!isLiked)
